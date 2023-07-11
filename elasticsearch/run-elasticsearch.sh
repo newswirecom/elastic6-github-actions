@@ -40,7 +40,7 @@ do
       --env "cluster.name=docker-elasticsearch" \
       --env "cluster.routing.allocation.disk.threshold_enabled=false" \
       --env "bootstrap.memory_lock=true" \
-      --env "ES_JAVA_OPTS=-Xms1g -Xmx1g" \
+      --env "ES_JAVA_OPTS=-Xms512m -Xmx512m" \
       --env "xpack.security.enabled=false" \
       --env "xpack.license.self_generated.type=basic" \
       --env "discovery.zen.ping.unicast.hosts=${UNICAST_HOSTS}" \
@@ -64,7 +64,7 @@ do
       --env "discovery.seed_hosts=es1" \
       --env "cluster.routing.allocation.disk.threshold_enabled=false" \
       --env "bootstrap.memory_lock=true" \
-      --env "ES_JAVA_OPTS=-Xms1g -Xmx1g" \
+      --env "ES_JAVA_OPTS=-Xms512m -Xmx512m" \
       --env "xpack.security.enabled=false" \
       --env "xpack.license.self_generated.type=basic" \
       --env "http.port=${port}" \
@@ -90,7 +90,7 @@ do
         --env "discovery.seed_hosts=es1" \
         --env "cluster.routing.allocation.disk.threshold_enabled=false" \
         --env "bootstrap.memory_lock=true" \
-        --env "ES_JAVA_OPTS=-Xms1g -Xmx1g" \
+        --env "ES_JAVA_OPTS=-Xms512m -Xmx512m" \
         --env "http.port=${port}" \
         --env "action.destructive_requires_name=false" \
         --ulimit nofile=65536:65536 \
@@ -111,7 +111,7 @@ do
         --env "discovery.seed_hosts=es1" \
         --env "cluster.routing.allocation.disk.threshold_enabled=false" \
         --env "bootstrap.memory_lock=true" \
-        --env "ES_JAVA_OPTS=-Xms1g -Xmx1g" \
+        --env "ES_JAVA_OPTS=-Xms512m -Xmx512m" \
         --env "xpack.license.self_generated.type=basic" \
         --env "http.port=${port}" \
         --env "action.destructive_requires_name=false" \
