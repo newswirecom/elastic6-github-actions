@@ -44,7 +44,7 @@ do
     --env "cluster.name=docker-elastic6" \
     --env "cluster.routing.allocation.disk.threshold_enabled=false" \
     --env "bootstrap.memory_lock=true" \
-    --env "ES_JAVA_OPTS=-Xms512m -Xmx512m" \
+    --env "ES_JAVA_OPTS=-Xms384m -Xmx384m" \
     --env "xpack.security.enabled=false" \
     --env "xpack.license.self_generated.type=basic" \
     --env "discovery.zen.ping.unicast.hosts=${UNICAST_HOSTS}" \
